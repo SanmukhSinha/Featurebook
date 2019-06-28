@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock css %}
+
+{% block content %}
+<br><br>
+<span class="home-list">
+    <a class="item" href="{% url 'toc:heading_list' %}">
+        Table of Contents
+    </a>
+    <br><br><br>
+    <a class="item" href="{% url 'links:link_list' %}">
+        Links
+    </a>
+    <br><br><br>
+    <a class="item" href="{% url 'configtable:config_table' %}">
+        Configurations
+    </a>
+    <br><br><br><br><br><br>
+    <a class="item" id="reload" href="{% url 'home:reload' %}">
+        Reload database
+    </a>
+</span>
+{% endblock %}

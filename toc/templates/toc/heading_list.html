@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/toc.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div id="list">
+    <br>
+    <span class="heading">
+        Table of Contents
+    </span>
+    <br>
+    <ul class="list">
+        {% for h in headings %}
+            <li class="{{ h.tag }}"> {{ h.text }} </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content%}

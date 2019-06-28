@@ -1,0 +1,17 @@
+a.item {
+    font-family: 'Karla', sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    background-color: rgb(8, 128, 207);
+    box-shadow: 0 5px 0 rgb(6, 3, 150);
+    color: whitesmoke;
+    padding: 0.5em 1.5em;
+    margin-left: 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.item:hover {
+    background-color: rgb(25, 223, 196);
+}
